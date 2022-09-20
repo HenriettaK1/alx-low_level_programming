@@ -4,8 +4,8 @@
 
 /**
  *Print_rev - Print a string in reverse order
- *@s: String in reverse order
- *Return: none
+ *@s: String to reverse
+ *Return: nothing
  */
 
 void print_rev(char *s)
