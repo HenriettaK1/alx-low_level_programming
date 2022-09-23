@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
-* _strncat - concatenate two strings but add inputted number of bytes
-* @dest: string to be appended upon
-* @src: string to be completed at end of dest
-* @n: integer parameter to compare index to
-* Return: returns new concatenated string
+* _strcmp - Compares pointers to two strings.
+* @s1: A pointer to the first string to be compared.
+* @s2: A pointer to the second string to be compared.
+* Return: If str1 < str2, the negative difference
+* If str1 == str2, 0.
+* If str1 > str2, the positive difference
 */
 
-char *_strncat(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-int index = 0, dest_len = 0;
-while (dest[index++])
-dest_len++;
-for (index = 0; src[index] && index < n; index++)
-dest[dest_len++] = src[
-ndex];
-return (dest);
+while (*s1 && *s2 && *s1 == *s2)
+{
+s1++;
+s2++;
+}
+return (*s1 - *s2);
 }
